@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=News+Cycle&family=Parisienne&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'News Cycle', sans-serif;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 40% 60%;
+    gap: 10px;
+    padding: 30px
+}
+
+#conteForm{
+    padding: 20px 50px;
+    border: 1px solid rgb(218, 218, 218);
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgb(218, 218, 218)
+}
+
+#conteForm > form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#conteForm > form > input{
+    border: 1px solid rgb(168, 168, 168);
+    font-size: 0.8rem;
+    padding: 10px 10px;
+}
+
+#conteForm > form > input:hover{
+    border: 2px solid rgb(38, 212, 192);
+}
+
+#conteForm > form > input[type="submit"]{
+    background-color: rgb(61, 61, 61);
+    border: none;
+    color: white;
+    border-radius: 60px;
+}
+
+#conteForm > form > input[type="submit"]:hover{
+    background: rgb(38, 212, 192);
+    cursor: pointer;
+    border: none;
+}
+
+#conteForm > form > h2{
+    font-size: 4rem;
+    text-align: center;
+    color: rgb(38, 212, 192);
+    font-family: 'Parisienne', cursive;
+}
+
+#conteTable > table, tr, td{
+    border-collapse: collapse;
+    border: 1px solid rgb(218, 218, 218);
+    text-align: center;
+}
+
+#conteTable > table{
+    width: 100%;
+}
+
+#conteTable > table > thead{
+    background-color: rgb(61, 61, 61);
+    color: white;
+}
+
+td, th{
+    padding: 7px;
+    font-weight: normal;
+}
+
+@media screen and (max-width: 768px) {
+    main{
+        display: grid;
+        grid-template-columns: 100%;
+        padding: 30px
+    }
+}
